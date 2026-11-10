@@ -1,19 +1,3 @@
-#!/usr/bin/env python3
-"""
-Pairing Android "Wireless debugging" lewat QR, connect ADB, lalu buka scrcpy.
-
-Syarat:
-- Android 11+, Developer Options dan Wireless debugging aktif
-- PC dan HP di jaringan Wi-Fi yang sama (mDNS tidak diblokir)
-- adb (Android platform-tools) di PATH, scrcpy di PATH (opsional)
-
-Install dependensi:
-    pip install zeroconf qrcode
-
-Pakai:
-    python adb_qr_pair.py            # pairing + connect + buka scrcpy
-"""
-
 import argparse
 import secrets
 import shutil
